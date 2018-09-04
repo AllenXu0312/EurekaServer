@@ -1,0 +1,17 @@
+server: 
+  port: 8761
+
+spring: 
+  security: 
+    basic: 
+      enabled: true
+    user: 
+      name: aaa
+      password: bbb
+    
+eureka: 
+  client: 
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl: 
+      defaultZone: http://localhost:8761/eureka/
